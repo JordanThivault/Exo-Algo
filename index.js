@@ -10,6 +10,12 @@
 // }
 // console.log(nomDeMaFonction(On remplace le paramètre par ce qu'on désire)) //
 
+const mult = (num1, num2) => {
+    const result = num1 * num2;
+    return result;
+};
+
+console.log (mult (2,3));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 2
@@ -20,7 +26,12 @@
 // const monTableau = [1, 2, 3]
 // console.log(monTableau[0]) // 1
 
+const monTableau = [1, 2, 3]
 
+function premierElement(tableau) {
+    return tableau[0];
+}
+console.log (premierElement(monTableau));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
