@@ -43,7 +43,14 @@ console.log (premierElement(monTableau));
 // monTableau.pop()
 // console.log(monTableau) // [1, 2]
 
+const montableau = [1, 2, 3]
 
+function suppDernierEllement (tableau) {
+    montableau.pop();
+    return tableau
+}
+
+console.log (suppDernierEllement (montableau));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 4
@@ -56,7 +63,17 @@ console.log (premierElement(monTableau));
 //   console.log(monTableau[i]) // 1, 2, 3
 // }
 
+const montablo = [1, 2, 3, 4]
 
+function sommeTab (tableau) {
+    let somme = 0;
+    for (let i =0; i < montablo.length; i++) {
+        somme += tableau [i];
+    }
+    return somme;
+}
+
+console.log (sommeTab (montablo));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -71,6 +88,18 @@ console.log (premierElement(monTableau));
 // console.log(monTableauInverse) // ["o", "l", "l", "e", "H"]
 //Maintenant que la string est inversée il faut la remettre en string avec la méthode join().
 
+const maString = "Hello"
+
+function stringInverse () {
+    const tab = maString.split("");
+    const tabInverse = tab.reverse();
+    const newString = tabInverse.join("");
+    return newString;
+}
+
+console.log (stringInverse (maString))
+
+
 
 //----------------------------------------------------------------------------------------------//
 
@@ -81,8 +110,13 @@ console.log (premierElement(monTableau));
 // const monTableau = [1, 2, 3]
 // console.log(Math.max(...monTableau)) // 3
 
+const monsupertableau = [1, 9, 3, 6]
 
+function grandNb () {
+    return Math.max(...monsupertableau)
+}
 
+console.log (grandNb (monsupertableau));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 7
