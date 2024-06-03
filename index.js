@@ -10,12 +10,12 @@
 // }
 // console.log(nomDeMaFonction(On remplace le paramètre par ce qu'on désire)) //
 
-const mult = (num1, num2) => {
-    const result = num1 * num2;
-    return result;
-};
+// const mult = (num1, num2) => {
+//     const result = num1 * num2;
+//     return result;
+// };
 
-console.log (mult (2,3));
+// console.log (mult (2,3));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 2
@@ -26,12 +26,12 @@ console.log (mult (2,3));
 // const monTableau = [1, 2, 3]
 // console.log(monTableau[0]) // 1
 
-const monTableau = [1, 2, 3]
+// const monTableau = [1, 2, 3]
 
-function premierElement(tableau) {
-    return tableau[0];
-}
-console.log (premierElement(monTableau));
+// function premierElement(tableau) {
+//     return tableau[0];
+// }
+// console.log (premierElement(monTableau));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 3
@@ -43,14 +43,14 @@ console.log (premierElement(monTableau));
 // monTableau.pop()
 // console.log(monTableau) // [1, 2]
 
-const montableau = [1, 2, 3]
+// const montableau = [1, 2, 3]
 
-function suppDernierEllement (tableau) {
-    montableau.pop();
-    return tableau
-}
+// function suppDernierEllement (tableau) {
+//     montableau.pop();
+//     return tableau
+// }
 
-console.log (suppDernierEllement (montableau));
+// console.log (suppDernierEllement (montableau));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 4
@@ -63,17 +63,17 @@ console.log (suppDernierEllement (montableau));
 //   console.log(monTableau[i]) // 1, 2, 3
 // }
 
-const montablo = [1, 2, 3, 4]
+// const montablo = [1, 2, 3, 4]
 
-function sommeTab (tableau) {
-    let somme = 0;
-    for (let i =0; i < montablo.length; i++) {
-        somme += tableau [i];
-    }
-    return somme;
-}
+// function sommeTab (tableau) {
+//     let somme = 0;
+//     for (let i =0; i < montablo.length; i++) {
+//         somme += tableau [i];
+//     }
+//     return somme;
+// }
 
-console.log (sommeTab (montablo));
+// console.log (sommeTab (montablo));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -88,16 +88,16 @@ console.log (sommeTab (montablo));
 // console.log(monTableauInverse) // ["o", "l", "l", "e", "H"]
 //Maintenant que la string est inversée il faut la remettre en string avec la méthode join().
 
-const maString = "Hello"
+// const maString = "Hello"
 
-function stringInverse () {
-    const tab = maString.split("");
-    const tabInverse = tab.reverse();
-    const newString = tabInverse.join("");
-    return newString;
-}
+// function stringInverse () {
+//     const tab = maString.split("");
+//     const tabInverse = tab.reverse();
+//     const newString = tabInverse.join("");
+//     return newString;
+// }
 
-console.log (stringInverse (maString))
+// console.log (stringInverse (maString))
 
 
 
@@ -110,13 +110,13 @@ console.log (stringInverse (maString))
 // const monTableau = [1, 2, 3]
 // console.log(Math.max(...monTableau)) // 3
 
-const monsupertableau = [1, 9, 3, 6]
+// const monsupertableau = [11, 99, 3, 6]
 
-function grandNb () {
-    return Math.max(...monsupertableau)
-}
+// function grandNb (tableau) {
+//     return Math.max(...tableau)
+// }
 
-console.log (grandNb (monsupertableau));
+// console.log (grandNb (monsupertableau));
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 7
@@ -126,7 +126,13 @@ console.log (grandNb (monsupertableau));
 // const monTableau = [1, 2, 3]
 // console.log(Math.min(...monTableau)) // 1
 
+// const monTableauu = [1, 2, 3, 8, 111]
 
+// function ptiNb (tableau) {
+//     return Math.min(...tableau)
+// }
+
+// console.log (ptiNb (monTableauu));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -142,6 +148,12 @@ console.log (grandNb (monsupertableau));
 //   return element !== "e" && element !== "o"
 // })
 
+// const maString = "aujourd'hui"
+// const monTableau = maString.split("")
+// const monTableauFiltre = monTableau.filter((element) => {
+//   return element !== "e" && element !== "o" && element !== "a" && element !== "i" && element !== "u"
+// })
+// console.log(monTableauFiltre)
 
 
 //----------------------------------------------------------------------------------------------//
@@ -154,7 +166,13 @@ console.log (grandNb (monsupertableau));
 // const monTableau = [1, 3, 2]
 // console.log(monTableau.sort()) // [1, 2, 3]
 
+const monTableau = [1, 3, 62, 2, 42, 7, 2, 4]
 
+function ordreCroissant (tableau) {
+    return tableau.sort((a, b) => a - b); 
+}
+
+console.log(ordreCroissant(monTableau));
 
 //----------------------------------------------------------------------------------------------//
 
