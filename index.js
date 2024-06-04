@@ -166,13 +166,13 @@
 // const monTableau = [1, 3, 2]
 // console.log(monTableau.sort()) // [1, 2, 3]
 
-const monTableau = [1, 3, 62, 2, 42, 7, 2, 4]
+// const monTableau = [1, 3, 62, 2, 42, 7, 2, 4]
 
-function ordreCroissant (tableau) {
-    return tableau.sort((a, b) => a - b); 
-}
+// function ordreCroissant (tableau) {
+//     return tableau.sort((a, b) => a - b); 
+// }
 
-console.log(ordreCroissant(monTableau));
+// console.log(ordreCroissant(monTableau));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -189,7 +189,18 @@ console.log(ordreCroissant(monTableau));
 // }
 // console.log(monTableau) // ["Hello", "elloH", "lloHe", "loHel", "oHell"]
 
+// const maString = "Hello"
+// const monTableau = []
 
+// function rotate (string){
+// for (let i = 0; i < maString.length; i++) {
+//   const maStringRotate = maString.substring(i) + maString.substring(0, i)
+//   monTableau.push(maStringRotate)
+// }
+// return monTableau;
+// }
+
+// console.log (rotate(monTableau));
 
 //----------------------------------------------------------------------------------------------//
 
@@ -203,6 +214,20 @@ console.log(ordreCroissant(monTableau));
 //   return element + 1
 // })
 
+// const monTableau = [1, 2, 3, 4]
+
+// function ajouterun(tableau){
+//     return tableau.map((element) => {
+//         return element +1;
+//     })
+// }
+// console.log (ajouterun(monTableau))
+
+// const monTableauAddition = monTableau.map((element) => {
+//   return element + 1
+// })
+
+// console.log (monTableauAddition)
 
 //----------------------------------------------------------------------------------------------//
 
@@ -215,6 +240,14 @@ console.log(ordreCroissant(monTableau));
 // const monTableauLongueur = monTableau.map((element) => {
 //   return element.length
 // })
+
+// const monTableau = ["bonjour", "monde", "comment", "tu", "va", "?"]
+
+// const tabLongueur = monTableau.map((element) => {
+//     return element.length
+// })
+
+// console.log (tabLongueur)
 
 
 //----------------------------------------------------------------------------------------------//
