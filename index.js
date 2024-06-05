@@ -263,7 +263,11 @@
 //   return element.charAt(0)
 // })
 
-
+// const monTableau = ["Bien", "Ordinateur", "Boule"]
+// const monTableauPremiereLettre = monTableau.map((element) => {
+//     return element.charAt(0)
+// })
+// console.log (monTableauPremiereLettre)
 
 //----------------------------------------------------------------------------------------------//
 
@@ -273,7 +277,11 @@
 // Exemple : ["Hello", "World"] => ["o", "d"]
 // Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
 
-
+const monTableau = ["Bien", "Ordinateur", "Boule"];
+const monTableauDerniereLettre = monTableau.map((element) => {
+    return element.charAt(element.length - 1);
+});
+console.log(monTableauDerniereLettre);
 
 //----------------------------------------------------------------------------------------------//
 
