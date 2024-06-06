@@ -277,11 +277,11 @@
 // Exemple : ["Hello", "World"] => ["o", "d"]
 // Indice regarde l'exercice 13, c'est exactement la même chose sauf qu'il faut récupérer la dernière lettre et non la première.
 
-const monTableau = ["Bien", "Ordinateur", "Boule"];
-const monTableauDerniereLettre = monTableau.map((element) => {
-    return element.charAt(element.length - 1);
-});
-console.log(monTableauDerniereLettre);
+// const monTableau = ["Bien", "Ordinateur", "Boule"];
+// const monTableauDerniereLettre = monTableau.map((element) => {
+//     return element.charAt(element.length - 1);
+// });
+// console.log(monTableauDerniereLettre);
 
 //----------------------------------------------------------------------------------------------//
 
@@ -418,6 +418,14 @@ console.log(monTableauDerniereLettre);
 // Indice : Pour savoir ça tu peux utiliser le modulo. Si une année est divisible par 4 et que le reste de la division est égal à 0, alors c'est une année bissextile.
 
 
+// function isLeapYears(year) {
+//     if (year % 4 === 0 ) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isLeapYears(2020));
 
 // EXERCICE 28
 
