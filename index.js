@@ -291,7 +291,13 @@
 // Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
 
+const monTableauDeString = ["Hello", "World","Test", "Salut", "Yo"];
 
+const monTableauFiltre = monTableauDeString.filter((element) => {
+  return element.length >= 5;
+});
+
+console.log(monTableauFiltre);
 
 //----------------------------------------------------------------------------------------------//
 
@@ -537,39 +543,39 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 // Le second ne contient que des data analysts seniors
 // (Étant donné qu'une personne est senior si elle a 5 ans d'expérience ou plus)
 
-const persons = [
-  { name: 'Mary', experience: 2, job: 'web dev' },
-  { name: 'Tony', experience: 6, job: 'data analyst' },
-  { name: 'John', experience: 2, job: 'data analyst' },
-  { name: 'Jane', experience: 6, job: 'web dev' },
-  { name: 'Maggie', experience: 2, job: 'web dev' },
-  { name: 'Leonardo', experience: 2, job: 'data analyst' },
-  { name: 'Carla', experience: 4, job: 'data analyst' },
-  { name: 'Mickael', experience: 7, job: 'web dev' },
-  { name: 'Penelope', experience: 7, job: 'web dev' },
-  { name: 'Homer', experience: 5, job: 'data analyst' },
-  { name: 'Leonardo', experience: 2, job: 'data analyst' },
-  { name: 'Carla', experience: 4, job: 'web dev' },
-  { name: 'Lisa', experience: 3, job: 'web dev' },
-  { name: 'Millie', experience: 5, job: 'data analyst' },
-  { name: 'Penelope', experience: 7, job: 'web dev' },
-];
+// const persons = [
+//   { name: 'Mary', experience: 2, job: 'web dev' },
+//   { name: 'Tony', experience: 6, job: 'data analyst' },
+//   { name: 'John', experience: 2, job: 'data analyst' },
+//   { name: 'Jane', experience: 6, job: 'web dev' },
+//   { name: 'Maggie', experience: 2, job: 'web dev' },
+//   { name: 'Leonardo', experience: 2, job: 'data analyst' },
+//   { name: 'Carla', experience: 4, job: 'data analyst' },
+//   { name: 'Mickael', experience: 7, job: 'web dev' },
+//   { name: 'Penelope', experience: 7, job: 'web dev' },
+//   { name: 'Homer', experience: 5, job: 'data analyst' },
+//   { name: 'Leonardo', experience: 2, job: 'data analyst' },
+//   { name: 'Carla', experience: 4, job: 'web dev' },
+//   { name: 'Lisa', experience: 3, job: 'web dev' },
+//   { name: 'Millie', experience: 5, job: 'data analyst' },
+//   { name: 'Penelope', experience: 7, job: 'web dev' },
+// ];
 
-const filterTabSeniorAndAnalyst = (arrayPersons) => {
-const seniorDav = []
-const seniorData = []
+// const filterTabSeniorAndAnalyst = (arrayPersons) => {
+// const seniorDav = []
+// const seniorData = []
 
- for (let i = 0; i < arrayPersons.length; i++){
-   const person = arrayPersons[i];
+//  for (let i = 0; i < arrayPersons.length; i++){
+//    const person = arrayPersons[i];
 
-   if (person.experience >= 5 && person.job === "web dev") {
-    seniorDav.push(person)
-   }
-   if (person.experience >= 5 && person.job === "data analyst"){
-    seniorData.push(person)
-   }
- }
-return [seniorDav, seniorData];
-};
+//    if (person.experience >= 5 && person.job === "web dev") {
+//     seniorDav.push(person)
+//    }
+//    if (person.experience >= 5 && person.job === "data analyst"){
+//     seniorData.push(person)
+//    }
+//  }
+// return [seniorDav, seniorData];
+// };
 
-console.log (filterTabSeniorAndAnalyst(persons));
+// console.log (filterTabSeniorAndAnalyst(persons));
