@@ -291,13 +291,13 @@
 // Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la longueur de la string. Incice : la méthode length() permet de récupérer la longueur d'une string.
 
-const monTableauDeString = ["Hello", "World","Test", "Salut", "Yo"];
+// const monTableauDeString = ["Hello", "World","Test", "Salut", "Yo"];
 
-const monTableauFiltre = monTableauDeString.filter((element) => {
-  return element.length >= 5;
-});
+// const monTableauFiltre = monTableauDeString.filter((element) => {
+//   return element.length >= 5;
+// });
 
-console.log(monTableauFiltre);
+// console.log(monTableauFiltre);
 
 //----------------------------------------------------------------------------------------------//
 
@@ -311,7 +311,13 @@ console.log(monTableauFiltre);
 //   return accumulateur + element
 // }, 0)
 
+// const monTableau = [1, 2, 3, 6]
 
+// const monTableauSomme = monTableau.reduce((accumulateur, element) => {
+//   return accumulateur + element 
+// }, 0)
+
+// console.log (monTableauSomme); 
 
 //----------------------------------------------------------------------------------------------//
 
@@ -325,6 +331,12 @@ console.log(monTableauFiltre);
 // const monTableauConcat = monTableau1.concat(monTableau2)
 // console.log(monTableauConcat) // ["Hello", "World", "Test", "Salut"]
 
+// const monTableau1 = ["Hello", "World", "bonjour"]
+// const monTableau2 = ["Test", "Salut"]
+// const monTableauConcat = monTableau1.concat(monTableau2)
+
+// console.log(monTableauConcat) 
+
 
 
 //----------------------------------------------------------------------------------------------//
@@ -335,8 +347,13 @@ console.log(monTableauFiltre);
 // Exemple : ["Poulet", "Chat", "Chien", "Cheval"] => ["Poulet", "Chien", "Cheval"]
 // Pour cette exercice on va utiliser la méthode filter() qui permet de filtrer un tableau, hésitez pas à regarder l'exercice 8 pour voir comment ça fonctionne. Sauf qu'ici on va filtrer en fonction de la présence de la lettre "e". Indice : la méthode includes() permet de savoir si une string contient une lettre ou un mot.
 
+// const monTableau = ["Poulet", "Chat", "Chien", "Cheval", 'mamouth']
 
+// const monTableauFiltre = monTableau.filter ((element) => {
+//   return element.includes("e")  
+// })
 
+// console.log (monTableauFiltre)
 //----------------------------------------------------------------------------------------------//
 
 // EXERCICE 19
@@ -345,7 +362,14 @@ console.log(monTableauFiltre);
 // Exemple : [ 2, 9, 6, 5, 6] => [2, 6, 6]
 // Indice : il y a plusieurs façon de faire, soit avec un for, soit avec la méthode filter() une fois ça fait utilise la méthode sort() qui permet de trier un tableau.
 
+// const montableau = [ 2, 9, 66, 47, 5, 6, 22, 3]
 
+// const monTableauFiltre = 
+// montableau.filter(elem => elem % 2 === 0);
+// monTableauFiltre.sort((a, b) => a - b);
+
+
+// console.log (monTableauFiltre);
 
 //----------------------------------------------------------------------------------------------//
 
