@@ -383,7 +383,21 @@
 // findShort("Prachett is the best author in the world ") // 2
 // findShort("The quick brown fox jumps over the lazy dog") // 3
 
+const maString = "Prachett is the best author in the world"
 
+
+const findShort = (s) => {
+
+    const words = s.split(' ');
+  
+    const shortestLength = words.reduce((minLength, word) => {
+      return Math.min(minLength, word.length);
+    }, Infinity);
+  
+    return shortestLength;
+  }
+
+console.log (findShort (maString));
 
 // EXERCICE 21
 
