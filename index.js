@@ -383,27 +383,40 @@
 // findShort("Prachett is the best author in the world ") // 2
 // findShort("The quick brown fox jumps over the lazy dog") // 3
 
-const maString = "Prachett is the best author in the world"
+// const maString = "Prachett is the best author in the world"
 
 
-const findShort = (s) => {
+// const findShort = (s) => {
 
-    const words = s.split(' ');
+//     const words = s.split(' ');
   
-    const shortestLength = words.reduce((minLength, word) => {
-      return Math.min(minLength, word.length);
-    }, Infinity);
+//     const shortestLength = words.reduce((minLength, word) => {
+//       return Math.min(minLength, word.length);
+//     }, Infinity);
   
-    return shortestLength;
-  }
+//     return shortestLength;
+//   }
 
-console.log (findShort (maString));
+// console.log (findShort (maString));
 
 // EXERCICE 21
 
 //Écrivez une fonction `anagram` qui prend deux chaînes et renvoie un booléen indiquant si les chaînes sont des anagrammes l'une de l'autre. Deux chaînes sont des anagrammes l'une de l'autre si elles contiennent les caractères, quel que soit l'ordre des caractères. Par exemple, "listen" et "silent" sont des anagrammes l'une de l'autre
 
+// const anagram = (str1, str2) => {
+ 
+//   const sortedStr1 = str1.split('').sort().join('');
+//   const sortedStr2 = str2.split('').sort().join('');
 
+//   if (sortedStr1 === sortedStr2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// console.log(anagram("listen", "silent")); 
+// console.log(anagram("hello", "world"));   
 
 // EXERCICE 22
 
@@ -412,7 +425,22 @@ console.log (findShort (maString));
 // removeDoubleLetters("google") // "gogle"
 // removeDoubleLetters("Hello World!") // "Helo World!"
 
+// const removeDoubleLetters = (str) => {
+//   let result = str[0]; 
 
+//   for (let i = 1; i < str.length; i++) {
+    
+//     if (str[i] !== str[i - 1]) {
+//       result += str[i];
+//     }
+//   }
+
+//   return result;
+// }
+
+// console.log(removeDoubleLetters("google"));       
+// console.log(removeDoubleLetters("Hello World!")); 
+// console.log(removeDoubleLetters("aabbcc"));       
 
 // EXERCICE 23
 
@@ -420,7 +448,15 @@ console.log (findShort (maString));
 // Exemple :
 // createPhoneNumber([1,2,3,4,5,6,7,8,9,0]) // "(123) 456-7890"
 
+// const createPhoneNumber = () => {
+  
+//   const randomNumbers = Array.from({ length: 8 }, () => Math.floor(Math.random() * 10));
+  
+  
+//   return `06 ${randomNumbers.slice(0, 2).join('')} ${randomNumbers.slice(2, 4).join('')} ${randomNumbers.slice(4, 6).join('')} ${randomNumbers.slice(6, 8).join('')}`;
+// }
 
+// console.log(createPhoneNumber());
 
 // EXERCICE 24
 
@@ -432,8 +468,24 @@ console.log (findShort (maString));
 // Indice 2 : Vous pouvez utiliser la méthode fromCharCode() pour récupérer un caractère à partir de son code unicode.  Exemple : String.fromCharCode(65) renvoie "A". Mais attention à refaire la boucle dans l'autre sens pour pouvoir comparer les codes unicode des caractères du tableau avec les codes unicode des caractères manquants.
 // Indice 3 : Il y a plus cas comparer les codes unicode des caractères du tableau avec les codes unicode des caractères manquants pour trouver le caractère manquant avec une condition if. Et retourner le caractère manquant avec un return et la méthode fromCharCode().
 
+// const findMissingLetter = (letters) => {
+  
+//   const codes = letters.map(letter => letter.charCodeAt(0));
+  
+//   codes.sort((a, b) => a - b);
+  
+//   for (let i = 0; i < codes.length - 1; i++) {
+//       if (codes[i + 1] !== codes[i] + 1) {
+//           return String.fromCharCode(codes[i] + 1);
+//       }
+//   }
+  
+//   return undefined;
+// }
 
-
+// console.log(findMissingLetter(["a","b","c","d","f"]));
+// console.log(findMissingLetter(["O","Q","R","S"])); 
+// console.log(findMissingLetter(["a","b","c","d","e"])); 
 // EXERCICE 25
 
 //Écrivez une fonction qui prend un tableau de string et renvoie un tableau de string triées par ordre alphabétique.
