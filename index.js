@@ -486,6 +486,8 @@
 // console.log(findMissingLetter(["a","b","c","d","f"]));
 // console.log(findMissingLetter(["O","Q","R","S"])); 
 // console.log(findMissingLetter(["a","b","c","d","e"])); 
+
+
 // EXERCICE 25
 
 //Écrivez une fonction qui prend un tableau de string et renvoie un tableau de string triées par ordre alphabétique.
@@ -493,7 +495,12 @@
 // sortString(["Banana", "Orange", "Apple", "Mango"]) // ["Apple", "Banana", "Mango", "Orange"]
 // sortString(["lait", "beurre", "fromage", "yaourt"]) // ["beurre", "fromage", "lait", "yaourt"]
 
+const sortString = (arr) => {
+    return arr.sort();
+}
 
+console.log (sortString (["Banana", "Orange", "Apple", "Mango"]))
+console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 
 // EXERCICE 26
 // Écris une fonction qui étant donné deux angles d'un triangle renvoie la mesure du troisième angle.
