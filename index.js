@@ -495,12 +495,12 @@
 // sortString(["Banana", "Orange", "Apple", "Mango"]) // ["Apple", "Banana", "Mango", "Orange"]
 // sortString(["lait", "beurre", "fromage", "yaourt"]) // ["beurre", "fromage", "lait", "yaourt"]
 
-const sortString = (arr) => {
-    return arr.sort();
-}
+// const sortString = (arr) => {
+//     return arr.sort();
+// }
 
-console.log (sortString (["Banana", "Orange", "Apple", "Mango"]))
-console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
+// console.log (sortString (["Banana", "Orange", "Apple", "Mango"]))
+// console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 
 // EXERCICE 26
 // Écris une fonction qui étant donné deux angles d'un triangle renvoie la mesure du troisième angle.
@@ -510,7 +510,9 @@ console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 // otherAngle(60, 60) // 60
 // Indice : Pour trouver le troisième angle, tu dois soustraire la somme des deux angles donnés à 180 degrés.
 
-
+// const otherAngle = (angle1, angle2) => {
+//     return 180 - (angle1 + angle2);
+// };
 
 // EXERCICE 27
 // Écris une fonction qui peut déterminer si une année est une année bissextile ou non. Elle doit renvoyer true si c'est le cas, sinon false.
@@ -519,7 +521,6 @@ console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 // isLeapYear(2020) // true
 // isLeapYear(2021) // false
 // Indice : Pour savoir ça tu peux utiliser le modulo. Si une année est divisible par 4 et que le reste de la division est égal à 0, alors c'est une année bissextile.
-
 
 // function isLeapYears(year) {
 //     if (year % 4 === 0 ) {
@@ -533,15 +534,29 @@ console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 // EXERCICE 28
 
 // Voici un example de tableau d'animaux. Écris une fonction qui à partir d'un tableau similaire reçu en paramètre renvoie un nouveau tableau qui lui même contient deux sous-tableaux. Le premier sous-tableau doit contenir les animaux domestiques et le second les animaux sauvages. Les animaux domestiques doivent être triés par ordre alphabétique et les animaux sauvages par ordre alphabétique inversé.
-
-
-
 // Exemple :
 // sortAnimals(animals) // [["Cat", "Dog", "Donkey", "Pigeon", "Turtle"], ["Eagle", "Monkey", "Panda", "Crocodile"]]
 // Indice : Oubliez pas que tu peux créer des variables qui contiennent des tableaux vides et que tu peux ajouter des éléments à un tableau avec la méthode push(). Mais vu que tu dois analyser le tableau d'animaux pour le trier, tu dois utiliser une boucle et faire des conditions if pour savoir si l'animal est domestique ou sauvage. Et tu dois trier les animaux domestiques par ordre alphabétique et les animaux sauvages par ordre alphabétique inversé. Pour trier un tableau par ordre alphabétique tu peux utiliser la méthode sort(). Pour trier un tableau par ordre alphabétique inversé tu peux utiliser la méthode reverse().
 
 
+// const sortAnimals = (animals) => {
+//     let domesticAnimals = [];
+//     let wildAnimals = [];
+//     const domesticList = ["Cat", "Dog", "Donkey", "Pigeon", "Turtle"];
+//     for (let animal of animals) {
+//         if (domesticList.includes(animal)) {
+//             domesticAnimals.push(animal);
+//         } else {
+//             wildAnimals.push(animal);
+//         }
+//     }
+//     domesticAnimals.sort();
+//     wildAnimals.sort().reverse();
+//     return [domesticAnimals, wildAnimals];
+// }
 
+// const animals = ["Dog", "Cat", "Eagle", "Panda", "Monkey", "Donkey", "Crocodile", "Turtle", "Pigeon"];
+// console.log(sortAnimals(animals));
 
 // EXERCICE 29
 
@@ -561,7 +576,21 @@ console.log (sortString (["lait", "beurre", "fromage", "yaourt"]))
 
 // Indice : Tu dois utiliser deux boucles imbriquées pour créer les sous-tableaux. La première boucle doit parcourir les colonnes et la seconde boucle doit parcourir les sièges de chaque colonne.
 
+// const theatreSieges = () => {
+//     const result = [];
 
+//     for (let col = 1; col <= 26; col ++) {
+//         const rangee = [];
+
+//         for (let siege = 1; siege <= 100; siege ++) {
+//             rangee.push(`${col}-${siege}`);
+//         }
+//         result.push(rangee);
+//     }
+//     return result;
+// }
+
+// console.log(theatreSieges());
 
 // EXERCICE 30
 
@@ -579,7 +608,23 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 //Indice : Tu dois utiliser une boucle for pour parcourir le tableau et une condition if pour savoir si notre équipe a gagné, perdu ou fait match nul. Et tu dois ajouter les points de chaque match à une variable score qui doit être initialisée à 0. Et tu dois retourner la variable score à la fin de la fonction.
 
+// const calculerScore = (result) => {
 
+//     let score = 0; 
+
+//     for (let i = 0; i < result.length; i++) {
+//         let [notreScore, autreScore] = result[i].split(':').map(Number);
+//         if (notreScore > autreScore) {
+//             score += 3;
+//         } else if (notreScore === autreScore) {
+//             score += 1;
+//         }
+//     }
+//     return score; 
+// }
+
+// const resultats = ["1:0", "2:0", "3:0", "4:4", "2:2", "3:3", "1:4", "2:3", "2:4", "3:3"];
+// console.log(calculerScore(resultats));
 
 // EXERCICE 31
 
